@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+
+
+
+
+</head>
+
+<body>
+
+<p id="hotel_name"></p>
+<p id="rooms"></p>
+
+<script> 
+
+var hotel = {
+
+name: "hilton",
+rooms: 40,
+booked: 20,
+checkAvails: function() {
+
+return this.rooms - this.booked;
+
+}
+
+
+};
+
+var insert_name = document.getElementById("hotel_name").innerHTML = hotel.name;
+var insert_room = document.getElementById("rooms").innerHTML = hotel.checkAvails();
+
+</script>
+
+
+	</body>
